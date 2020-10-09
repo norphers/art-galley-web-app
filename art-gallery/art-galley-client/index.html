@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>White Collar Project</title>
+    <style>
+    </style>
+</head>
+<body>
+
+    <h3>SHOPS</h3>
+
+    <div>
+        <h4>Create a new shop</h4>
+        <input type="text" id="name" name="name" placeholder="Shop Name"/>
+        <input type="text" id="maxStorage" name="maxStorage" placeholder="Shop Max Storage"/>
+        <button onclick="addShop()">Add</button>
+    </div>
+
+    <div>
+        <h4>Get all shops</h4>
+        <button onclick="getShops()">Get</button>
+        <p id="showData"></p>
+    </div>
+
+    <div>
+        <h4>Delete all shops of the database</h4>
+        <button onclick="deleteShops()">Delete</button>
+    </div>
+    
+    <h3>PICTURES</h3>
+
+    <div>
+        <h4>New picture</h4>
+        <input type="text" id="author" name="author" placeholder="Author" />
+        <input type="text" id="title" name="title" placeholder="Title" />
+        <input type="text" id="price" name="price" placeholder="Price" />
+        <select id="selectShop"></select>
+        <!--<button onclick="test()">Addtest</button>--> <!-- em serveix per comprobar si agafa el idShop o no -->
+        <button onclick="addPicture()">Add</button>
+    </div>
+    
+    <div>
+        <h4>Get pictures from one shop</h4>
+        <select id="selectShop2"></select>
+        <button onclick="getPictures()">Get Pictures</button>
+        <p id="showData2"></p>
+    </div>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
